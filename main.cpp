@@ -1,6 +1,6 @@
 #include "lib.h"
 bool numeriprimi(int n,int d){
-  int rest;
+  int rest=0;
   if(n>1){
     if(d<n){
       rest=n%d;
