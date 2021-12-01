@@ -1,4 +1,4 @@
-#include <iostream>
+
 #include "lib.h"
 bool numeriprimi(int n,int d){
   int rest;
