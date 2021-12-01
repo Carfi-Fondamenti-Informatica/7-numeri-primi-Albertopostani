@@ -3,9 +3,9 @@ bool numeriprimi(int n,int d){
   int rest=0;
   if(n>1){
     if(d<n){
-      rest=n%d;
+      res t= n % d;
       if(rest !=0){
-        return numeriprimi(n,d+1);
+        return numeriprimi(n, d + 1);
       }else{
         return false;
 }
