@@ -1,20 +1,14 @@
+#include <iostream>
 #include "lib.h"
-bool numeriprimi(int n,int d){
-  int rest=0;
-  if(n>1){
-    if(d<n){
-      rest=n%d;
-      if(rest !=0){
-        return numeriprimi(n,d+1);
-      }else{
-        return false;
-}
-    }else{
-      return true;
-    }
-  }else if(n==2){
-    return true;
+using namespace std;
+int main(){
+  int a=0,b=2;
+  cin>>a;
+  bool ris=numeriprimi(a,b);
+  if(ris){
+    cout<<"numero primo"<<endl;
   }else{
-    return false;
-  }
+    cout<<"numero non primo"<<endl;
+}
+  return 0;
 }
